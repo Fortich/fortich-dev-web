@@ -11,7 +11,7 @@ export default function PostDetail() {
   return (
     <>
       <p>Not found &apos;{window.location.pathname}&apos; in server</p>
-      <img className='missing-img' src={NotFoundImage}></img>
+      <img className='missing-img' src={NotFoundImage} alt='Missing cat'></img>
     </>
   );
 }
