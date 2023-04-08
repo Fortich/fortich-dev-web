@@ -1,0 +1,18 @@
+.img-float {
+  width: 15rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+}
+
+.code {
+  display: block;
+  width: 90%;
+  min-height: 5em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: monospace;
+  border: 1px solid #bbb;
+  padding: 1em;
+  white-space:pre-wrap;
+}
