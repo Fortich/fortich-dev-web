@@ -11,9 +11,9 @@ export default function PostDetail() {
     <>
       <Card className='margin-bottom'>
         <Card.Body>
-          <Card.Title>Hola~!</Card.Title>
+          <Card.Title>Sobre Antonio Fortich</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
-            Adiós xd
+            Un poco sobre mi vida
           </Card.Subtitle>
           <hr />
           <p>
@@ -53,41 +53,74 @@ export default function PostDetail() {
           <h4>Experiencia</h4>
           <h5>Senior Software Engineer en Bold S.A.S. y Bold C.F.</h5>
           <p>
-            Boldsito ha sido para mí una parte importante para mi vida, he
-            encontrado varios buenos amigos y hemos contruido muy buen
-            software. Desarrolladores muy capaces y que les encanta enseñar;
-            espero haber aprendido un poco de ellos.
+            Durante mi estadía en Bold he adelantado procesos de diseño,
+            planeación y construcción de software. He sido parte del equipo
+            de Cuenta Depósito, donde he tenido la oportunidad de trabajar
+            en la creación y mantenimiento de un sistema de financiero de
+            alto impacto para pequeños y medianos comercios de Colombia.
+          </p>
+          <p>
+            Parte de mi trabajo ha sido diseñar la integración con el Banco
+            de la República de Colombia, un sistema de alto valor agregado
+            para el país, que permite a los usuarios hacer transferencias y
+            consolidación de cuentas.
+          </p>
+          <p>
+            He participado en procesos de refactorización y rediseño de
+            procesos y software existente para aumentar la capacidad de
+            expandir funcionalidad en nuestro código. Nos hemos enfocado en
+            DDD para habilitar una base de código dirigida en el negocio
+            y que pueda ser escalada por varios equipos de desarrollo.
           </p>
           <h5>Junior Software Engineer en PayU</h5>
           <p>
-            Cuánto conocimiento sobre finanzas, tecnología, manejo de grandes
-            volúmenes de datos se puede encontrar aquí.
+            En PayU tuve la oportunidad de trabajar en proyectos de
+            integración y orquestación de procesamiento de transacciones en
+            diferentes redes de pago de diferentes países en latinoamérica.
           </p>
           <h5>Junior Engineer en Xphera Group</h5>
-          <p>
-            Gracias por la primera oportunidad 100% laboral amigos de Xphera!
-          </p>
           <h5>
             Estudiante auxiliar - Junior Python Developer en la Facultad de
             Ingeniería de la Universidad Nacional de Colombia
           </h5>
-          <p>
-            Jojojo, aprender a tener compañeros de trabajo, y buscar un
-            objetivo común.
-          </p>
           <hr />
           <h4>Educación</h4>
-          <p>
+          <h5>
             Matemáticas - Universidad Nacional de Colombia
-          </p>
+          </h5>
           <p>
-            Maestría en Ingeniería de Sistemas y Computación -
-            Universidad Nacional de Colombia
+            Estudiar matemáticas es un reto y desafío personal, me gustan mucho
+            las matemáticas, pero aprenderlas a profundidad, aprender a
+            demostrar, teoremas y propiedades es un logro que espero conseguir.
           </p>
+          <h5>
+            Maestría en Ingeniería de Sistemas y Computación - Universidad
+            Nacional de Colombia
+          </h5>
           <p>
+            Durante mis estudios de posgrado he investigado sobre la
+            interoperabilidad como atributo de calidad. Mis planes son
+            mostrar cómo un sistema distribuído, enfrentándose a ciertos
+            problemas, funciona mejor que un sistema que se comporta como
+            un individuo, tal como nosotros, los seres humanos.
+          </p>
+          <h5>
             Ingeniería de Sistemas y Computación - Universidad Nacional
             de Colombia
+          </h5>
+          <p>
+            Aprendí mucho durante mi paso por la Universidad Nacional. Me
+            gradué con un promedio de 4.4/5.0 y con un título de Ingeniero de
+            Sistemas y Computación. Durante mi estadía en la universidad
+            tuve la oportunidad de trabajar en proyectos académicos de 
+            diferentes asignaturas como Inteligencia Artificial, Programación,
+            Estructuras de Datos, Arquitecturas de Software, entre otras.
           </p>
+          <hr />
+          <h4>Certificados</h4>
+          <p>Scrum Master Professional Certification</p>
+          <p>Domain Driven Design: Complete Software Architecture Course</p>
+          <p>Microservices Software Architecture: Patterns and Techniques</p>
           <hr />
           <h4>Logros</h4>
           <p>
@@ -110,9 +143,33 @@ export default function PostDetail() {
           </p>
           <hr />
           <h4>Hobbies</h4>
-          <p>Linuxito</p>
-          <p>Videojuegos</p>
-          <p>Esta página xd</p>
+          <h5>Linux y el Software Libre</h5>
+          <p>
+            Jugar con diferentes distribuciones de Linux es un hobbie bastante
+            divertido con el que puedo probar diferentes soluciones a los
+            mismos problemas mientras experimento en mi "caja de arena".
+          </p>
+          <h5>Videojuegos</h5>
+          <p>
+            Varios videojuegos han marcado mi vida, mi forma de pensar y
+            mi forma de ver el mundo. Algunos de ellos son:
+            <ul>
+              <li> The legend of Zelda: Ocarina of Time </li>
+              <li> The legend of Zelda: Majora's Mask </li>
+              <li> The legend of Zelda: Breath of the Wild </li>
+              <li> Megaman X 1, 2 y 3 </li>
+            </ul>
+            Como se puede apreciar, soy un fan de la saga The Legend of Zelda.
+          </p>
+          <h5>Programación</h5>
+          <p>
+            Esta página es un hobbie para mí, con ella espero escribir sobre
+            los temas que me inspiran y llaman la atención, mientras creo una
+            especie de cuaderno digital, comparto con el mundo mis sentimientos
+            y pensamientos.
+          </p>
+          <h5>Definición sobre mi vida</h5>
+          <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4">Mi vida</a>
         </Card.Body>
       </Card>
     </>
