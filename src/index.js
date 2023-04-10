@@ -9,6 +9,7 @@ import PostDetail from './PostDetail/post_detail';
 
 
 import PostList from './PostList/post_list';
+import LlavesSsh from './Posts/llaves-ssh'
 import MalosOlores from './Posts/malos-olores';
 import Predicados from './Posts/predicados';
 import Proposiciones from './Posts/proposiciones';
@@ -17,6 +18,13 @@ import PageNotFound from './PageNotFound/page_not_found';
 import AboutMe from './AboutMe/about_me';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const posts = [
+  LlavesSsh,
+  MalosOlores,
+  Predicados,
+  Proposiciones,
+  Vida,
+]
 root.render(
     <React.StrictMode>
       <BrowserRouter>
@@ -24,16 +32,12 @@ root.render(
           <Routes>
             <Route exact path='/'
               element={
-                <PostList
-                  posts={
-                    [
-                      MalosOlores,
-                      Predicados,
-                      Proposiciones,
-                      Vida,
-                    ]
-                  }
-                />
+                <PostList posts={posts} />
+              }
+            />
+            <Route exact path='/llaves-ssh'
+              element={
+                <PostDetail post={LlavesSsh} />
               }
             />
             <Route exact path='/malos-olores'
