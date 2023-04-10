@@ -3,7 +3,6 @@ import {Children, React} from 'react';
 
 import PropTypes from 'prop-types';
 import IndexNavBar from './IndexNavBar/index_nav_bar';
-import IndexFooterBar from './IndexFooterBar/index_footer_bar';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
