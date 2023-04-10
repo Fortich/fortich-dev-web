@@ -35,7 +35,6 @@ export default function Index({children}) {
           </Col>
         </Row>
       </Container>
-      <IndexFooterBar />
     </>
   );
 }
