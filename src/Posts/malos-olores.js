@@ -17,7 +17,7 @@ const post = {
     'código de programación que nos sugieren que las cosas podrían estar ' +
     'diseñadas de mejor manera o podríamos reemplazarlas para mejorar ' +
     'nuestro código.',
-  updated_on: 'March 18, 2023, 10:47 p.m.',
+  updated_on: 'Abril 8, 2023, 9:10 a.m.',
   reading_time: '1 hour',
   slug: 'malos-olores',
   content: (
