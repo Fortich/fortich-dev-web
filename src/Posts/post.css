@@ -5,6 +5,20 @@
   border-radius: 20px;
 }
 
+.img-float-bigger {
+  width: 20rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+}
+
+.img-float-way-bigger {
+  width: 30rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+}
+
 .code {
   display: block;
   width: 90%;

@@ -16,9 +16,11 @@ import Proposiciones from './Posts/proposiciones';
 import Vida from './Posts/vida';
 import PageNotFound from './PageNotFound/page_not_found';
 import AboutMe from './AboutMe/about_me';
+import Fstab from './Posts/fstab';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const posts = [
+  Fstab,
   LlavesSsh,
   MalosOlores,
   Predicados,
@@ -33,6 +35,11 @@ root.render(
             <Route exact path='/'
               element={
                 <PostList posts={posts} />
+              }
+            />
+            <Route exact path='/fstab'
+              element={
+                <PostDetail post={Fstab} />
               }
             />
             <Route exact path='/llaves-ssh'
