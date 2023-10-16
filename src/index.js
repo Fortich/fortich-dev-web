@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import PostDetail from './PostDetail/post_detail';
 
-
+import Marriage from './Marriage/index'
 import PostList from './PostList/post_list';
 import LlavesSsh from './Posts/llaves-ssh'
 import MalosOlores from './Posts/malos-olores';
@@ -35,6 +35,11 @@ root.render(
             <Route exact path='/'
               element={
                 <PostList posts={posts} />
+              }
+            />
+            <Route exact path='/matri'
+              element={
+                <PostList posts={Marriage} />
               }
             />
             <Route exact path='/fstab'
