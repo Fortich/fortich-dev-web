@@ -4,7 +4,7 @@ import './index.css';
 import Index from './Index/index';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PostDetail from './PostDetail/post_detail';
 
 import Marriage from './Marriage/index'
@@ -28,56 +28,80 @@ const posts = [
   Vida,
 ]
 root.render(
-    <React.StrictMode>
-      <BrowserRouter>
-        <Index>
-          <Routes>
-            <Route exact path='/'
-              element={
-                <PostList posts={posts} />
-              }
-            />
-            <Route exact path='/matri'
-              element={
-                <PostList posts={Marriage} />
-              }
-            />
-            <Route exact path='/fstab'
-              element={
-                <PostDetail post={Fstab} />
-              }
-            />
-            <Route exact path='/llaves-ssh'
-              element={
-                <PostDetail post={LlavesSsh} />
-              }
-            />
-            <Route exact path='/malos-olores'
-              element={
-                <PostDetail post={MalosOlores} />
-              }
-            />
-            <Route exact path='/logica-de-predicados'
-              element={
-                <PostDetail post={Predicados} />
-              }
-            />
-            <Route exact path='/logica-de-proposiciones'
-              element={
-                <PostDetail post={Proposiciones} />
-              }
-            />
-            <Route exact path='/vida'
-              element={
-                <PostDetail post={Vida} />
-              }
-            />
-            <Route path="/about-me" element={<AboutMe />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </Index>
-      </BrowserRouter>
-    </React.StrictMode>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/'
+          element={
+            <Index>
+              <PostList posts={posts} />
+            </Index>
+          }
+        />
+        <Route exact path='/matri'
+          element={
+            <Marriage />
+          }
+        />
+        <Route exact path='/fstab'
+          element={
+            <Index>
+              <PostDetail post={Fstab} />
+            </Index>
+          }
+        />
+        <Route exact path='/llaves-ssh'
+          element={
+            <Index>
+              <PostDetail post={LlavesSsh} />
+            </Index>
+          }
+        />
+        <Route exact path='/malos-olores'
+          element={
+            <Index>
+              <PostDetail post={MalosOlores} />
+            </Index>
+          }
+        />
+        <Route exact path='/logica-de-predicados'
+          element={
+            <Index>
+              <PostDetail post={Predicados} />
+            </Index>
+          }
+        />
+        <Route exact path='/logica-de-proposiciones'
+          element={
+            <Index>
+              <PostDetail post={Proposiciones} />
+            </Index>
+          }
+        />
+        <Route exact path='/vida'
+          element={
+            <Index>
+              <PostDetail post={Vida} />
+            </Index>
+          }
+        />
+        <Route path="/about-me"
+          element={
+            <Index>
+              <AboutMe />
+            </Index>
+          }
+        />
+        <Route path="*"
+          element={
+            <Index>
+              <PageNotFound />
+            </Index>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
