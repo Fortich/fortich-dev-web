@@ -17,9 +17,11 @@ import Vida from './Posts/vida';
 import PageNotFound from './PageNotFound/page_not_found';
 import AboutMe from './AboutMe/about_me';
 import Fstab from './Posts/fstab';
+import Fronteras from './Posts/fronteras';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const posts = [
+  Fronteras,
   Fstab,
   LlavesSsh,
   MalosOlores,
@@ -27,6 +29,8 @@ const posts = [
   Proposiciones,
   Vida,
 ]
+
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -41,6 +45,13 @@ root.render(
         <Route exact path='/matri'
           element={
             <Marriage />
+          }
+        />
+        <Route exact path='/fronteras'
+          element={
+            <Index>
+              <PostDetail post={Fronteras} />
+            </Index>
           }
         />
         <Route exact path='/fstab'

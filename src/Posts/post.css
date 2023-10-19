@@ -1,3 +1,10 @@
+.img-smaller-float {
+  width: 7.6rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+}
+
 .img-float {
   width: 15rem;
   margin-right: 1rem;
