@@ -18,9 +18,11 @@ import PageNotFound from './PageNotFound/page_not_found';
 import AboutMe from './AboutMe/about_me';
 import Fstab from './Posts/fstab';
 import Fronteras from './Posts/fronteras';
+import ExifMetadata from './Posts/exif-metadata';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const posts = [
+  ExifMetadata,
   Fronteras,
   Fstab,
   LlavesSsh,
@@ -45,6 +47,13 @@ root.render(
         <Route exact path='/matri'
           element={
             <Marriage />
+          }
+        />
+        <Route exact path='/exif'
+          element={
+            <Index>
+              <PostDetail post={ExifMetadata} />
+            </Index>
           }
         />
         <Route exact path='/fronteras'
