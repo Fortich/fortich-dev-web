@@ -19,9 +19,11 @@ import AboutMe from './AboutMe/about_me';
 import Fstab from './Posts/fstab';
 import Fronteras from './Posts/fronteras';
 import ExifMetadata from './Posts/exif-metadata';
+import Python1 from './Posts/python-1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const posts = [
+  Python1,
   ExifMetadata,
   Fronteras,
   Fstab,
@@ -47,6 +49,13 @@ root.render(
         <Route exact path='/matri'
           element={
             <Marriage />
+          }
+        />
+         <Route exact path='/python-1'
+          element={
+            <Index>
+              <PostDetail post={Python1} />
+            </Index>
           }
         />
         <Route exact path='/exif'
